@@ -18,6 +18,7 @@ class ArticleController extends Controller
        $articles = DB::table('articles')
             ->join('categories', 'articles.category_id', '=', 'categories.id')
             ->orderBy('articles.created_at', 'desc')
+            ->select('articles.id', 'articles.category_id', 'articles.subject', 'articles.author', 'articles.created_at', 'categories.name')
             ->get();
 
        return response()->json([
@@ -36,6 +37,7 @@ class ArticleController extends Controller
         $articles = DB::table('articles')
             ->join('categories', 'articles.category_id', '=', 'categories.id')
             ->where('articles.id', $id)
+            ->select('articles.id', 'articles.category_id', 'articles.subject', 'articles.author', 'articles.created_at', 'articles.body', 'categories.name')
             ->get();
 
        return response()->json([

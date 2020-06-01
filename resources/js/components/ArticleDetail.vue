@@ -10,19 +10,19 @@
                         <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Onderwerp</th>
                             <th>Datum</th>
                             <th>Auteur</th>
-                            <th>Categorie ID</th>
                             <th>Categorie</th>
                             <th>Omschrijving</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr v-for="item in article">
+                            <td>{{ item.id }}</td>
                             <td>{{ item.subject }}</td>
                             <td>{{ convertDate(item.created_at) }}</td>
                             <td>{{ item.author }}</td>
-                            <td>{{ item.category_id }}</td>
                             <td>{{ item.name }}</td>
                             <td>{{ item.body }}</td>
                         </tr>
