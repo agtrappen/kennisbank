@@ -12,8 +12,8 @@
      * DB_DATABASE=kennisbank
      * DB_USERNAME=root
      * DB_PASSWORD=
-5. Run: composer install
-6. Run: npm install
+5. Run: npm install
+6. Run: composer install 
 7. Run: php artisan key:generate
 8. Run: php artisan migrate
 9. Run: php artisan db:seed
