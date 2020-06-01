@@ -15,6 +15,7 @@
 5. Run: composer install
 6. Run: npm install
 7. Run: php artisan key:generate
-8. php artisan migrate
-9. php artisan db:seed
-10. Run: php artisan serve
+8. Run: php artisan migrate
+9. Run: php artisan db:seed
+10. Run: npm run watch
+11. Run: php artisan serve
